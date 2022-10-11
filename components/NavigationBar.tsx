@@ -5,7 +5,7 @@ export function NavigationBar() {
   const onClick = () => {
     window.open(pdf);
   };
-
+console.log()
   return (
     <nav>
       <div className="flex flex-col justify-between pt-8 mx-4 md:flex-row lg:flex-row lg:pt-14">
