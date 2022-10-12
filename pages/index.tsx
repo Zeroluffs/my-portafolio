@@ -8,6 +8,7 @@ const Home: NextPage = () => {
     <div className="relative min-h-screen bg-midnight ">
       <NavigationBar />
       <SocialBar />
+      <About/>
     </div>
   );
 };
