@@ -62,7 +62,9 @@ function NavigationLinks({ number, name }: NavLinkType) {
   return (
     <li className="flex mt-2">
       <span className="text-leaf "> 0.{number}</span>
-      <p className="ml-4 font-thin text-lightState">{name}</p>
+      <Link href={`#${name}`}>
+        <a className="ml-4 font-thin text-lightState">{name}</a>
+      </Link>
     </li>
   );
 }

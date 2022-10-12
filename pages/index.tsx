@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import { About, Experience } from "../components";
 import { NavigationBar } from "../components/NavigationBar";
 import { SocialBar } from "../components/SocialBar";
 
