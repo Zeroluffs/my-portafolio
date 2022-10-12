@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { About, Experience } from "../components";
+import { About, Experience, HomePage } from "../components";
 import { NavigationBar } from "../components/NavigationBar";
 import { SocialBar } from "../components/SocialBar";
 
@@ -8,6 +8,7 @@ const Home: NextPage = () => {
     <div className="relative min-h-screen bg-midnight ">
       <NavigationBar />
       <SocialBar />
+      <HomePage/>
       <About/>
     </div>
   );
