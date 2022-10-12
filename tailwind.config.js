@@ -10,6 +10,7 @@ module.exports = {
         midnight: "#0a192f",
         leaf: "#64ffda",
         lightState: "#ccd6f6",
+        lightNavy: "#112240",
       },
     },
   },
