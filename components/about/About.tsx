@@ -2,9 +2,9 @@ import { Skills } from "./Skills";
 
 export function About() {
   return (
-    <section id="about">
-      <div className="flex flex-row justify-center">
-        <div className="flex flex-col w-[500px]  mt-96  ">
+    <section id="About" className="h-[100vh]">
+      <div className="flex flex-row justify-center pt-60">
+        <div className="flex flex-col w-[500px]   ">
           <p className="font-sans text-2xl text-lightState ">
             <span className="mr-2 text-lg slashed-zero text-leaf">0.1</span>{" "}
             About Me
@@ -23,7 +23,7 @@ export function About() {
             hesitate to <span className="text-leaf">contact</span> me.
           </p>
         </div>
-        <div className=" mt-96">
+        <div className="">
           <Skills />
         </div>
       </div>

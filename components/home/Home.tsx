@@ -1,6 +1,6 @@
 export function HomePage() {
   return (
-    <section id="home">
+    <section id="Home" className="h-[100vh]">
       <div className="flex flex-col w-[800px] mx-auto mt-48">
         <p className="mb-8 text-xl font-thin tracking-wider text-leaf">
           Hi, my name is

@@ -10,6 +10,7 @@ const Home: NextPage = () => {
       <SocialBar />
       <HomePage/>
       <About/>
+      <Experience/>
     </div>
   );
 };
