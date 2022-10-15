@@ -29,13 +29,19 @@ export const companiesWorked = [
     endDate: "July 2022",
     role: "Software Engineer",
     thingsWorkedOn: [
-      "Migrating web modules from AngularJS to ExtJS",
-      "Creation of Restful APIs with Spring Boot",
-      "Various React Forms for both web and mobile",
+      "Developed features meant to increase revenue per session such as Send a Surprise, Upsells",
+      "Strengthened site usability and accessibility",
+      "A/B Feature Testing",
+      "Shipped high quality code with a focus on scalability, performance and accessibility",
+      "Converted our codebase from Javascript to Typescript",
     ],
   },
   {
     id: 4,
     name: "Peacedev",
+    startDate: "January",
+    endDate: "Current",
+    role: "Font End Developer",
+    thingsWorkedOn: ["WIP"],
   },
 ];
