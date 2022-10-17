@@ -58,8 +58,8 @@ function CompaniesList({ name, id, openTab, setOpenTab }: CompaniesListType) {
       {" "}
       <a
         className={classNames(
-          openTab === id ? "border-l-2 border-gray-300" : "",
-          "inline-block p-4 text-slate-400 transition transition-duration-300ms  hover:text-leaf hover:border-gray-300 "
+          openTab === id ? "border-l-2 border-leaf bg-lightNavy text-leaf" : "text-slate-400",
+          "inline-block p-4  transition transition-duration-300ms  hover:text-leaf hover:border-leaf "
         )}
         id="profile-tab"
         data-toggle="tab"
