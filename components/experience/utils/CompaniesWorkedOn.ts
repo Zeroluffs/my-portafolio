@@ -44,7 +44,7 @@ export const companiesWorked = [
     name: "Peacedev",
     startDate: "October",
     endDate: "Current",
-    role: "Font End Developer",
+    role: "Front End Developer",
     thingsWorkedOn: ["WIP"],
   },
 ];
