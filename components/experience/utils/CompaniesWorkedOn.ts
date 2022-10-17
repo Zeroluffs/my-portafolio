@@ -4,6 +4,7 @@ export const companiesWorked = [
     name: "Proteccion",
     startDate: "February",
     endDate: "August 2021",
+    link: "https://www.proteccion.com/contenidos/",
     role: "Junior Software Developer",
     thingsWorkedOn: [
       "Launched several responsive features using React, React-Dashboard and Redux",
@@ -15,6 +16,7 @@ export const companiesWorked = [
     name: "Indra",
     startDate: "September",
     endDate: "January 2022",
+    link: "https://www.indracompany.com/en/",
     role: " Software Developer",
     thingsWorkedOn: [
       "Migrating web modules from AngularJS to ExtJS",
@@ -27,6 +29,7 @@ export const companiesWorked = [
     name: "Lovepop",
     startDate: "January",
     endDate: "July 2022",
+    link: "https://www.lovepop.com/",
     role: "Software Engineer",
     thingsWorkedOn: [
       "Developed features meant to increase revenue per session such as Send a Surprise, Upsells",
