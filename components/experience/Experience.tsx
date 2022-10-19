@@ -1,6 +1,7 @@
 import React from "react";
 import { classNames } from "../../utils/JoinClassName";
 import { companiesWorked } from "./utils/CompaniesWorkedOn";
+import "animate.css";
 
 interface CompaniesListType {
   name: string;
@@ -58,7 +59,9 @@ function CompaniesList({ name, id, openTab, setOpenTab }: CompaniesListType) {
       {" "}
       <a
         className={classNames(
-          openTab === id ? "border-l-2 border-leaf bg-lightNavy text-leaf" : "text-slate-400",
+          openTab === id
+            ? "border-l-2 border-leaf bg-lightNavy text-leaf"
+            : "text-slate-400",
           "inline-block p-4  transition transition-duration-300ms  hover:text-leaf hover:border-leaf "
         )}
         id="profile-tab"
@@ -91,7 +94,7 @@ function CompanyExperience({
       <div
         className={classNames(
           openTab === id ? "block" : "hidden",
-          " p-4 rounded-lg "
+          " p-4 rounded-lg animate__animated animate__fadeIn "
         )}
         id={`#link${id}`}
       >
