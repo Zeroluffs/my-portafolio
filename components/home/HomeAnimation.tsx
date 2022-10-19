@@ -2,12 +2,21 @@ import { RefObject, useEffect } from "react";
 import { gsap } from "gsap";
 
 export const HomeAnimation = (
+  page: RefObject<HTMLDivElement>,
   nameIntro: RefObject<HTMLParagraphElement>,
   name: RefObject<HTMLParagraphElement>,
   title: RefObject<HTMLParagraphElement>,
   info: RefObject<HTMLParagraphElement>
 ) => {
   const time = gsap.timeline();
+  time.fromTo(
+    page.current,
+    { x: 100 },
+    {
+      visibility: "visible",
+    }
+  );
+
   time.fromTo(
     nameIntro.current,
     {
@@ -19,8 +28,8 @@ export const HomeAnimation = (
     {
       opacity: 100,
       x: 0,
-    },
-    "+=1"
+      autoAlpha: 1,
+    }
   );
   time.fromTo(
     name.current,
@@ -33,7 +42,7 @@ export const HomeAnimation = (
     {
       opacity: 100,
       x: 0,
-    },
+    }
   );
   time.fromTo(
     title.current,
@@ -61,5 +70,6 @@ export const HomeAnimation = (
       x: 0,
     }
   );
+
   // eslint-disable-next-line react-hooks/exhaustive-deps
 };
