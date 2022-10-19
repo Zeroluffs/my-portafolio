@@ -8,9 +8,9 @@ const Home: NextPage = () => {
     <div className="relative min-h-screen bg-midnight ">
       <NavigationBar />
       <SocialBar />
-      <HomePage/>
-      <About/>
-      <Experience/>
+      <HomePage />
+      <About />
+      <Experience />
     </div>
   );
 };
