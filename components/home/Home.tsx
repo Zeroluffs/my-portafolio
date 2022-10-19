@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useHomeAnimation } from "./useHomeAnimations";
 import { HomeAnimation } from "./HomeAnimation";
 
@@ -7,11 +7,17 @@ export function HomePage() {
   const name = useRef<HTMLParagraphElement | null>(null);
   const title = useRef<HTMLParagraphElement | null>(null);
   const info = useRef<HTMLParagraphElement | null>(null);
+  const [isShown, setIsShown] = useState(false);
 
   // useHomeAnimation(nameIntro, name, title, info);
 
   useEffect(() => {
-    HomeAnimation(nameIntro, name, title, info);
+    const timer = setTimeout(() => {
+      setIsShown(true);
+      HomeAnimation(nameIntro, name, title, info);
+    }, 500);
+
+    return () => clearTimeout(timer);
   }, []);
   return (
     <section id="Home" className="h-[100vh]">

@@ -18,7 +18,7 @@ export function NavAnimation(
     {
       opacity: 100,
       y: 0,
-    }
+    },
   );
   itemsRef.current!.map((item: any, index: any) => {
     time.fromTo(
@@ -26,7 +26,7 @@ export function NavAnimation(
       {
         opacity: 0,
         y: 100,
-        delay: 2,
+        delay: 1,
         duration: 0.5,
         stagger: {
           amount: 1,
@@ -43,7 +43,7 @@ export function NavAnimation(
     {
       opacity: 0,
       y: 100,
-      delay: 2,
+      delay: 1,
       duration: 0.5,
       stagger: {
         amount: 1,

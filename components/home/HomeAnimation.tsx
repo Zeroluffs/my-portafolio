@@ -19,7 +19,8 @@ export const HomeAnimation = (
     {
       opacity: 100,
       x: 0,
-    }
+    },
+    "+=1"
   );
   time.fromTo(
     name.current,
@@ -32,7 +33,7 @@ export const HomeAnimation = (
     {
       opacity: 100,
       x: 0,
-    }
+    },
   );
   time.fromTo(
     title.current,
