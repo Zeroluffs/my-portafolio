@@ -1,6 +1,6 @@
 import Link from "next/link";
-import React, { useRef } from "react";
-import { useNavAnimation } from "./useNavAnimations";
+import React, { useEffect, useRef } from "react";
+import { NavAnimation } from "./useNavAnimations";
 
 interface NavLinkType {
   number: number;
@@ -41,7 +41,9 @@ export function NavigationBar() {
   const itemsRef = useRef<HTMLDivElement[]>([]);
   const resumeButton = useRef<HTMLAnchorElement | null>(null);
   itemsRef.current = [];
-  useNavAnimation(logoRef, itemsRef, resumeButton);
+  useEffect(() => {
+    NavAnimation(logoRef, itemsRef, resumeButton);
+  }, []);
 
   const addToRefs = (item: any) => {
     if (item) {
