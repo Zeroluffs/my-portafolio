@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import { useHomeAnimation } from "./useHomeAnimations";
 import { HomeAnimation } from "./HomeAnimation";
 
 export function HomePage() {
@@ -9,7 +8,6 @@ export function HomePage() {
   const info = useRef<HTMLParagraphElement | null>(null);
   const [isShown, setIsShown] = useState(false);
 
-  // useHomeAnimation(nameIntro, name, title, info);
 
   useEffect(() => {
     const timer = setTimeout(() => {
