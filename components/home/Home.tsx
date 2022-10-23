@@ -1,4 +1,5 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { ProjectCard } from "../work/ProjectCard";
 import { HomeAnimation } from "./HomeAnimation";
 
 export function HomePage() {
@@ -53,6 +54,7 @@ export function HomePage() {
           <span className="ml-2 text-leaf">Peacedev</span>
         </p>
       </div>
+      <ProjectCard/>
     </section>
   );
 }
