@@ -1,4 +1,4 @@
-import { useEffect, Ref, RefObject } from "react";
+import { RefObject } from "react";
 import { gsap } from "gsap";
 
 export function NavAnimation(
@@ -18,7 +18,7 @@ export function NavAnimation(
     {
       opacity: 100,
       y: 0,
-    },
+    }
   );
   itemsRef.current!.map((item: any, index: any) => {
     time.fromTo(

@@ -6,7 +6,6 @@ export function Projects() {
     <section id="projects" className="h-[100vh] ">
       <div className="grid grid-cols-3 gap-y-6 w-[978px] m-auto">
         {projectsWorked.map((project, index) => {
-          console.log(project);
           return (
             <div key={project.id}>
               <ProjectCard
