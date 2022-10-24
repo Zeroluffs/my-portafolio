@@ -7,7 +7,19 @@ export function SocialBarAnimation(socialBarRef: any) {
   console.log(socialBarRef);
   time.to(socialBarRef.current, {
     visibility: "visible",
-    delay: 3,
-    duration: 1
+    delay: 2.5,
+    duration: 0.5,
   });
+
+  time.fromTo(
+    socialBarRef.current,
+    {
+      opacity: 0,
+    },
+    {
+      ease: "ease.inOut",
+      opacity: 100,
+      duration: 15,
+    }
+  );
 }
