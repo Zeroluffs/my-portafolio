@@ -11,6 +11,7 @@ interface ProjectCardProps {
   techUsed: string[];
   gitHub: string;
   link: string;
+  addToRefs: (item: any) => void;
 }
 
 export function ProjectCard({
@@ -19,9 +20,13 @@ export function ProjectCard({
   techUsed,
   gitHub,
   link,
+  addToRefs,
 }: ProjectCardProps) {
   return (
-    <div className="h-[324px] w-[304px] bg-lightNavy hover:-mt-2 transition duration-500 group ">
+    <div
+      className="h-[324px] w-[304px] bg-lightNavy hover:-mt-2 transition duration-500 group invisible "
+      ref={addToRefs}
+    >
       <div className="p-4">
         <div className="flex justify-between">
           <FontAwesomeIcon className="text-[38px] text-leaf" icon={faFolder} />
