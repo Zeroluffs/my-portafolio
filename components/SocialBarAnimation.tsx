@@ -1,10 +1,8 @@
 import { RefObject } from "react";
-import { gsap, Power2 } from "gsap";
+import { gsap } from "gsap";
 
-export function SocialBarAnimation(socialBarRef: any) {
+export function SocialBarAnimation(socialBarRef: RefObject<HTMLDivElement>) {
   const time = gsap.timeline();
-  const ease = Power2.easeInOut;
-  console.log(socialBarRef);
   time.to(socialBarRef.current, {
     visibility: "visible",
     delay: 2.5,
