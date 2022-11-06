@@ -16,7 +16,7 @@ export function Projects() {
     }
   };
   return (
-    <section id="projects" className="h-[100vh] ">
+    <section id="Work" className="h-[100vh] ">
       <div className="grid grid-cols-3 gap-y-6 w-[978px] m-auto">
         {projectsWorked.map((project, index) => {
           return (
