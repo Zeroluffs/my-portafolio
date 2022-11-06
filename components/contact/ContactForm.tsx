@@ -1,3 +1,5 @@
+import { InputComponent } from "./InputComponent";
+
 export function ContactForm() {
   return (
     <section>
@@ -11,30 +13,19 @@ export function ContactForm() {
       </div>
       <div className="flex flex-col items-center justify-center mt-20 bg-lightNavy w-[800px] h-[648px] m-auto">
         <form className="flex flex-col">
-          <div>
-            <label htmlFor="name" className="text-base text-gray-300 ">
-              Name *
-            </label>
-            <input
-              required
-              className="block h-12 p-4 my-4 rounded-md w-[500px] bg-midnight text-lightState"
-              id="name"
-              type="text"
-              placeholder="Enter Your Name"
-            ></input>
-          </div>
-          <div>
-            <label htmlFor="email" className="text-base text-gray-300">
-              Email Address *
-            </label>
-            <input
-              required
-              className="block h-12 p-4 my-4 rounded-md w-[500px] bg-midnight text-lightState "
-              id="email"
-              type="email"
-              placeholder="Enter Your Email Address"
-            ></input>
-          </div>
+          <InputComponent
+            name="Name *"
+            id="name"
+            placeholder="Enter Your Name"
+            type="text"
+          />
+
+          <InputComponent
+            name="Email Address *"
+            id="email"
+            placeholder="Enter Your Email Address"
+            type="email"
+          />
           <div>
             <label htmlFor="name" className="text-base text-gray-300">
               Message *
