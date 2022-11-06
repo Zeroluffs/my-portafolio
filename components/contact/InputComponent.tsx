@@ -1,8 +1,11 @@
+import { RefObject } from "react";
+
 interface InputComponentProps {
   name: string;
   id: string;
   placeholder: string;
   type: string;
+  inputRef: RefObject<HTMLInputElement>;
 }
 
 export function InputComponent({
@@ -10,6 +13,7 @@ export function InputComponent({
   id,
   placeholder,
   type,
+  inputRef,
 }: InputComponentProps) {
   return (
     <div>
@@ -17,6 +21,7 @@ export function InputComponent({
         {name}
       </label>
       <input
+        ref={inputRef}
         required
         className="block h-12 p-4 my-4 rounded-md w-[500px] bg-midnight text-lightState"
         id={id}
