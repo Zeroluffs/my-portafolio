@@ -6,10 +6,15 @@ export function ContactForm() {
   const email = useRef<HTMLInputElement>(null);
   const textArea = useRef<HTMLTextAreaElement>(null);
 
-  const onSubmit = (event: any) => {
+  const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     console.log(name.current!.value);
+    console.log(email.current!.value);
+    console.log(textArea.current!.value);
+
     name.current!.value = "";
+    email.current!.value = "";
+    textArea.current!.value = "";
   };
 
   return (
@@ -22,7 +27,7 @@ export function ContactForm() {
           to hear from you!
         </p>
       </div>
-      <div className="flex flex-col items-center justify-center mt-20 bg-lightNavy w-[800px] h-[648px] m-auto">
+      <div className="flex flex-col items-center justify-center mt-20 bg-lightNavy w-[800px] h-[648px] m-auto rounded-lg">
         <form className="flex flex-col" onSubmit={onSubmit}>
           <InputComponent
             name="Name *"
@@ -44,6 +49,7 @@ export function ContactForm() {
               Message *
             </label>
             <textarea
+              ref={textArea}
               required
               placeholder="Enter Your Message"
               className="block h-48 p-4 my-8 transition w-[500px] ease-in-out rounded-md text-lightState bg-midnight  "
