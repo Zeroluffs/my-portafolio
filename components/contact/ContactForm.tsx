@@ -3,7 +3,7 @@ import { useContactForm } from "./hooks/useContactForm";
 import { InputComponent } from "./InputComponent";
 
 export function ContactForm() {
-  const { email, name, textArea, onSubmit } = useContactForm();
+  const { email, name, textArea, onSubmit, form } = useContactForm();
 
   return (
     <section>
@@ -16,7 +16,7 @@ export function ContactForm() {
         </p>
       </div>
       <div className="flex flex-col items-center justify-center mt-20 bg-lightNavy w-[800px] h-[648px] m-auto rounded-lg">
-        <form className="flex flex-col" onSubmit={onSubmit}>
+        <form className="flex flex-col" onSubmit={onSubmit} ref={form}>
           <InputComponent
             name="Name *"
             id="name"
@@ -40,7 +40,7 @@ export function ContactForm() {
               ref={textArea}
               required
               placeholder="Enter Your Message"
-              className="block h-48 p-4 my-8 transition w-[500px] ease-in-out rounded-md text-lightState bg-midnight  "
+              className="block h-48 p-4 my-8 transition w-[500px] ease-in-out rounded-md text-lightState bg-midnight  resize-none"
               id="textArea"
             ></textarea>
           </div>
