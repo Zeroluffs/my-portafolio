@@ -19,7 +19,7 @@ export function ContactForm() {
         <form className="flex flex-col" onSubmit={onSubmit} ref={form}>
           <InputComponent
             name="Name *"
-            id="name"
+            id="from_name"
             placeholder="Enter Your Name"
             type="text"
             inputRef={name}
@@ -27,7 +27,7 @@ export function ContactForm() {
 
           <InputComponent
             name="Email Address *"
-            id="email"
+            id="from_email"
             placeholder="Enter Your Email Address"
             type="email"
             inputRef={email}
@@ -39,9 +39,10 @@ export function ContactForm() {
             <textarea
               ref={textArea}
               required
+              name="message"
               placeholder="Enter Your Message"
               className="block h-48 p-4 my-8 transition w-[500px] ease-in-out rounded-md text-lightState bg-midnight  resize-none"
-              id="textArea"
+              id="message"
             ></textarea>
           </div>
 
