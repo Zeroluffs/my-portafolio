@@ -16,8 +16,8 @@ export function Projects() {
     }
   };
   return (
-    <section id="Work" className="h-[100vh] ">
-      <div className="grid grid-cols-3 gap-y-6 w-[978px] m-auto">
+    <section id="Work"className="h-[60vh]">
+      <div className="grid grid-cols-3 gap-y-6 w-[978px] m-auto pt-[100px]">
         {projectsWorked.map((project, index) => {
           return (
             <div key={project.id}>

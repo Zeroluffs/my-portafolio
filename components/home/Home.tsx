@@ -24,7 +24,7 @@ export function HomePage() {
   // }
 
   return (
-    <section id="Home" className="h-[100vh] ">
+    <section id="Home" className="h-[80vh] ">
       <div
         className="flex flex-col w-[800px] mx-auto mt-48 invisible  "
         ref={page}

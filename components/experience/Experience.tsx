@@ -14,8 +14,8 @@ export function Experience() {
   const [openTab, setOpenTab] = React.useState(1);
 
   return (
-    <section id="Experience" className="h-[100vh]">
-      <div className="flex flex-row justify-center">
+    <section id="Experience"className="h-[60vh]">
+      <div className="flex flex-row justify-center pt-[100px]">
         <div className="pb-4 ml-32 border-l border-heig border-gray-700 h-[225px] ">
           <ul className="flex flex-col text-white" role="tablist">
             {companiesWorked.map((company, id) => {

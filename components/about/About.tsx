@@ -2,8 +2,8 @@ import { Skills } from "./Skills";
 
 export function About() {
   return (
-    <section id="About" className="h-[100vh]">
-      <div className="flex flex-row justify-center pt-60">
+    <section id="About" className="h-[60vh]">
+      <div className="flex flex-row justify-center pt-[100px] ">
         <div className="flex flex-col w-[500px]   ">
           <p className="font-sans text-2xl text-lightState ">
             <span className="mr-2 text-lg slashed-zero text-leaf">0.1</span>{" "}
