@@ -6,7 +6,7 @@ export function ContactForm() {
   const { email, name, textArea, onSubmit, form } = useContactForm();
 
   return (
-    <section>
+    <section id="Contact">
       <div className="flex flex-col items-center justify-center">
         <p className="mb-4 text-lg font-normal text-leaf"> What is next?</p>
         <p className="mb-4 font-sans text-4xl text-lightState">Get In Touch</p>
