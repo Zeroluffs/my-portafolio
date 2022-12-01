@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import { useEffect, useState } from "react";
 import { About, Experience, HomePage } from "../components";
 import { ContactForm } from "../components/contact/ContactForm";
+import { Footer } from "../components/footer/Footer";
 import { NavigationBar } from "../components/NavigationBar";
 import { SocialBar } from "../components/SocialBar";
 import { Projects } from "../components/work/Projects";
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
       <Experience />
       <Projects />
       <ContactForm/>
+      <Footer/>
     </div>
   );
 };
