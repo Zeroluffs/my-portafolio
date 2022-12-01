@@ -17,16 +17,16 @@ export function HomePage() {
 
     return () => clearTimeout(timer);
   }, []);
-  // if (typeof window !== "undefined") {
-  //   window.addEventListener("load", function (event) {
-  //     HomeAnimation(page, nameIntro, name, title, info);
-  //   });
-  // }
+  if (typeof window !== "undefined") {
+    window.addEventListener("load", function (event) {
+      HomeAnimation(page, nameIntro, name, title, info);
+    });
+  }
 
   return (
     <section id="Home" className="h-[80vh] ">
       <div
-        className="flex flex-col w-[800px] mx-auto mt-48 invisible  "
+        className="flex flex-col desktop:w-[800px] mx-auto mt-48 invisible px-[24px]"
         ref={page}
       >
         <p
@@ -35,17 +35,17 @@ export function HomePage() {
         >
           Hi, my name is
         </p>
-        <p className="mb-8 font-sans text-6xl text-lightState" ref={name}>
+        <p className="mb-8 font-sans text-4xl desktop:text-6xl text-lightState" ref={name}>
           {" "}
           Jhoner Pineda.
         </p>
         <p
-          className="mb-8 font-sans text-6xl tracking-wide text-slate-400"
+          className="mb-8 font-sans text-4xl tracking-wide desktop:text-6xl text-slate-400"
           ref={title}
         >
           I build things for the web.
         </p>
-        <p className="font-sans text-lg text-slate-400 w-[500px]" ref={info}>
+        <p className="font-sans text-lg text-slate-400 desktop:w-[500px]" ref={info}>
           I&apos;m a software engineer specializing in building exceptional
           digital experiences. Currently I&apos;m focused in building the
           Frontend of Websites and Web Applications that leads to the success of

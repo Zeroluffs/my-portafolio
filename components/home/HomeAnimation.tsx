@@ -9,10 +9,12 @@ export const HomeAnimation = (
   info: RefObject<HTMLParagraphElement>
 ) => {
   const time = gsap.timeline();
+
   time.fromTo(
     page.current,
-    { x: 100 },
+    { x: -100 },
     {
+      x: 0,
       visibility: "visible",
     }
   );
