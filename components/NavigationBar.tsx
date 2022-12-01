@@ -62,7 +62,7 @@ export function NavigationBar() {
         <div className="text-4xl text-lightState" id="Logo" ref={logoRef}>
           JP
         </div>
-        {/* <ul className="flex-row justify-center hidden gap-4 lg:flex ">
+        <ul className="flex-row justify-center hidden gap-4 desktop:flex ">
           {navigationRoutes.map((singleRoute) => {
             return (
               <NavigationLinks
@@ -82,22 +82,33 @@ export function NavigationBar() {
           >
             Resume
           </a>
-        </ul> */}
-        <button onClick={() => setIsOpen(!isOpen)}>
-            <FontAwesomeIcon  onClick={() => setIsOpen(!isOpen)} className="text-4xl text-leaf" icon={faBars} />
-          </button>
+        </ul>
+        <button className="desktop:hidden" onClick={() => setIsOpen(!isOpen)}>
+          <FontAwesomeIcon
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-4xl text-leaf"
+            icon={faBars}
+          />
+        </button>
       </div>
       {isOpen && <NavBarDrawer setIsOpen={setIsOpen} />}
     </nav>
   );
 }
 
- function NavigationLinks({ number, name, addToRefs }: NavLinkType) {
+function NavigationLinks({ number, name, addToRefs }: NavLinkType) {
   return (
     <li className="flex mt-2 " id={`#navLinks`} ref={addToRefs}>
       <span className="text-leaf "> 0.{number}</span>
       <Link href={`#${name}`}>
-        <a onClick={()=>{console.log("using vac")}} className="ml-4 font-thin text-lightState">{name}</a>
+        <a
+          onClick={() => {
+            console.log("using vac");
+          }}
+          className="ml-4 font-thin text-lightState"
+        >
+          {name}
+        </a>
       </Link>
     </li>
   );
