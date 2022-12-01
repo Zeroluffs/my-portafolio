@@ -5,7 +5,7 @@ export const projectsWorked = [
     description: "App to keep track of your expenses",
     techUsed: ["Next.js", "Node", "Express"],
     gitHub: "https://github.com/Zeroluffs/BudgetApp",
-    link: "https://github.com/Zeroluffs/BudgetApp",
+    link: "https://www.linkedin.com/in/jhonerpineda/",
   },
   {
     id: 2,
@@ -14,6 +14,6 @@ export const projectsWorked = [
       "Portafolio like website for illustrators to showcase their work",
     techUsed: ["Next.js", "Tailwind", "AWS"],
     gitHub: "https://github.com/Zeroluffs/art-showcase",
-    link: "https://github.com/Zeroluffs/art-showcase",
+    link: "https://www.linkedin.com/in/jhonerpineda/",
   },
 ];

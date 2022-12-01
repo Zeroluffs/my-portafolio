@@ -31,13 +31,13 @@ export function ProjectCard({
         <div className="flex justify-between">
           <FontAwesomeIcon className="text-[38px] text-leaf" icon={faFolder} />
           <div className="flex flex-row gap-4 mt-2">
-            <a href={link}>
+            <a target="_blank" rel="noopener noreferrer" href={link}>
               <FontAwesomeIcon
                 className="text-[24px] text-lightState"
                 icon={faArrowUpRightFromSquare}
               />
             </a>
-            <a href={gitHub}>
+            <a target="_blank" rel="noopener noreferrer" href={gitHub}>
               <FontAwesomeIcon
                 className="text-[24px] text-lightState"
                 icon={faGithub}
