@@ -5,10 +5,15 @@ export function About() {
     <section id="About" className="h-[60vh]">
       <div className="flex flex-row justify-center pt-[100px] ">
         <div className="flex flex-col w-[500px]   ">
-          <p className="font-sans text-2xl text-lightState ">
-            <span className="mr-2 text-lg slashed-zero text-leaf">0.1</span>{" "}
+          <div className="relative flex">
+          <p className="font-sans text-2xl font-bold text-lightState ">
+            <span className="mr-2 text-xl slashed-zero text-leaf">0.1</span>{" "}
             About Me
           </p>
+          <div className="absolute align-middle border-b-[1px] border-gray-700 w-[278px] right-14 top-4 "></div>
+          </div>
+          
+
           <p className="mt-8 font-sans text-slate-400 w-[500px]">
             Hello! My name is Jhoner and I enjoy creating things that live on
             the Internet. My interest in Software Development started back in

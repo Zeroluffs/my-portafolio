@@ -14,40 +14,50 @@ export function Experience() {
   const [openTab, setOpenTab] = React.useState(1);
 
   return (
-    <section id="Experience"className="h-[60vh]">
-      <div className="flex flex-row justify-center pt-[100px]">
-        <div className="pb-4 ml-32 border-l border-heig border-gray-700 h-[225px] ">
-          <ul className="flex flex-col text-white" role="tablist">
-            {companiesWorked.map((company, id) => {
-              return (
-                <div key={id}>
-                  <CompaniesList
-                    name={company.name}
-                    id={company.id}
-                    openTab={openTab}
-                    setOpenTab={setOpenTab}
-                  />
-                </div>
-              );
-            })}
-          </ul>
+    <section id="Experience" className="h-[60vh]">
+      <div className="flex flex-col items-center justify-center ">
+        <div className=" w-[500px] mr-[44px] flex relative ">
+          <h3 className="text-2xl font-bold text-lightState bg">
+            <span className="text-xl text-leaf pr-[12px]"> 0.3</span> Where
+            I&lsquo;ve worked
+          </h3>
+          <div className="absolute align-middle border-b-[1px] border-gray-700 w-44 right-14 top-4 "></div>
         </div>
-        {companiesWorked.map((company, index) => {
-          return (
-            <div key={index}>
-              <CompanyExperience
-                name={company.name}
-                link={company.link}
-                id={company.id}
-                role={company.role}
-                startDate={company.startDate}
-                endDate={company.endDate}
-                thingsWorkedOn={company.thingsWorkedOn}
-                openTab={openTab}
-              />
-            </div>
-          );
-        })}
+
+        <div className="flex flex-row justify-center pt-[100px]">
+          <div className="pb-4 ml-32 border-l border-heig border-gray-700 h-[225px] ">
+            <ul className="flex flex-col text-white" role="tablist">
+              {companiesWorked.map((company, id) => {
+                return (
+                  <div key={id}>
+                    <CompaniesList
+                      name={company.name}
+                      id={company.id}
+                      openTab={openTab}
+                      setOpenTab={setOpenTab}
+                    />
+                  </div>
+                );
+              })}
+            </ul>
+          </div>
+          {companiesWorked.map((company, index) => {
+            return (
+              <div key={index}>
+                <CompanyExperience
+                  name={company.name}
+                  link={company.link}
+                  id={company.id}
+                  role={company.role}
+                  startDate={company.startDate}
+                  endDate={company.endDate}
+                  thingsWorkedOn={company.thingsWorkedOn}
+                  openTab={openTab}
+                />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );
