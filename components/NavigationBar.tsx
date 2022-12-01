@@ -1,5 +1,8 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { faBars } from "./icons/Icons";
+import { NavBarDrawer } from "./navbar/mobile/NavBarDrawer";
 import { NavAnimation } from "./useNavAnimations";
 
 interface NavLinkType {
@@ -37,14 +40,17 @@ const navigationRoutes = [
 ];
 
 export function NavigationBar() {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   const logoRef = useRef<HTMLDivElement | null>(null);
   const itemsRef = useRef<HTMLDivElement[]>([]);
   const resumeButton = useRef<HTMLAnchorElement | null>(null);
   itemsRef.current = [];
   useEffect(() => {
-    NavAnimation(logoRef, itemsRef, resumeButton);
+    NavAnimation(logoRef, resumeButton, itemsRef);
   }, []);
-
+  useEffect(() => {
+    console.log("work", isOpen);
+  }, [isOpen]);
   const addToRefs = (item: any) => {
     if (item) {
       itemsRef.current.push(item);
@@ -52,11 +58,11 @@ export function NavigationBar() {
   };
   return (
     <nav>
-      <div className="flex flex-col justify-between pt-8 mx-4 md:flex-row lg:flex-row lg:pt-14">
+      <div className="flex flex-row justify-between pt-8 mx-4 lg:flex-row lg:pt-14">
         <div className="text-4xl text-lightState" id="Logo" ref={logoRef}>
           JP
         </div>
-        <ul className="flex flex-row justify-center gap-4 ">
+        {/* <ul className="flex-row justify-center hidden gap-4 lg:flex ">
           {navigationRoutes.map((singleRoute) => {
             return (
               <NavigationLinks
@@ -76,18 +82,22 @@ export function NavigationBar() {
           >
             Resume
           </a>
-        </ul>
+        </ul> */}
+        <button onClick={() => setIsOpen(!isOpen)}>
+            <FontAwesomeIcon  onClick={() => setIsOpen(!isOpen)} className="text-4xl text-leaf" icon={faBars} />
+          </button>
       </div>
+      {isOpen && <NavBarDrawer setIsOpen={setIsOpen} />}
     </nav>
   );
 }
 
-function NavigationLinks({ number, name, addToRefs }: NavLinkType) {
+ function NavigationLinks({ number, name, addToRefs }: NavLinkType) {
   return (
     <li className="flex mt-2 " id={`#navLinks`} ref={addToRefs}>
       <span className="text-leaf "> 0.{number}</span>
       <Link href={`#${name}`}>
-        <a className="ml-4 font-thin text-lightState">{name}</a>
+        <a onClick={()=>{console.log("using vac")}} className="ml-4 font-thin text-lightState">{name}</a>
       </Link>
     </li>
   );

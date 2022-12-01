@@ -3,8 +3,8 @@ import { gsap } from "gsap";
 
 export function NavAnimation(
   logoRef: RefObject<HTMLDivElement>,
-  itemsRef: RefObject<HTMLDivElement[]>,
-  resumeButton: RefObject<HTMLAnchorElement>
+  resumeButton: RefObject<HTMLAnchorElement>,
+  itemsRef?: RefObject<HTMLDivElement[]>,
 ) {
   const time = gsap.timeline();
   time.fromTo(
@@ -20,7 +20,7 @@ export function NavAnimation(
       y: 0,
     }
   );
-  itemsRef.current!.map((item: any, index: any) => {
+  itemsRef?.current!.map((item: any, index: any) => {
     time.fromTo(
       item,
       {
