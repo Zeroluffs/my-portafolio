@@ -2,6 +2,8 @@ import React from "react";
 import { classNames } from "../../utils/JoinClassName";
 import { companiesWorked } from "./utils/CompaniesWorkedOn";
 import "animate.css";
+import { useMediaQuery } from "../hooks/useMediaQuery";
+import ScrollContainer from "react-indiana-drag-scroll";
 
 interface CompaniesListType {
   name: string;
@@ -12,34 +14,54 @@ interface CompaniesListType {
 
 export function Experience() {
   const [openTab, setOpenTab] = React.useState(1);
+  const isBreakPoint = useMediaQuery(768);
 
   return (
-    <section id="Experience" className="h-[60vh]">
-      <div className="flex flex-col items-center justify-center ">
-        <div className=" w-[500px] mr-[44px] flex relative ">
+    <section id="Experience" className="desktop:h-[60vh]">
+      <div className="flex flex-col items-center justify-center pt-[16px] ">
+        <div className=" desktop:w-[500px] mr-[44px] flex relative ">
           <h3 className="text-2xl font-bold text-lightState bg">
             <span className="text-xl text-leaf pr-[12px]"> 0.3</span> Where
             I&lsquo;ve worked
           </h3>
-          <div className="absolute align-middle border-b-[1px] border-gray-700 w-44 right-14 top-4 "></div>
+          {/* <div className="absolute align-middle border-b-[1px] border-gray-700 w-44 right-14 top-4 "></div> */}
         </div>
 
-        <div className="flex flex-row justify-center pt-[100px]">
-          <div className="pb-4 ml-32 border-l border-heig border-gray-700 h-[225px] ">
-            <ul className="flex flex-col text-white" role="tablist">
-              {companiesWorked.map((company, id) => {
-                return (
-                  <div key={id}>
-                    <CompaniesList
-                      name={company.name}
-                      id={company.id}
-                      openTab={openTab}
-                      setOpenTab={setOpenTab}
-                    />
-                  </div>
-                );
-              })}
-            </ul>
+        <div className="flex flex-col desktop:flex-row justify-center  pt-[16px] desktop:pt-[100px]">
+          <div className="pb-4 desktop:ml-32 desktop:border-l border-heig border-gray-700 desktop:h-[225px] ">
+            {isBreakPoint ? (
+              <ScrollContainer>
+                <ul className="flex flex-row w-[325px]  text-white" role="tablist">
+                  {companiesWorked.map((company, id) => {
+                    return (
+                      <div key={id}>
+                        <CompaniesList
+                          name={company.name}
+                          id={company.id}
+                          openTab={openTab}
+                          setOpenTab={setOpenTab}
+                        />
+                      </div>
+                    );
+                  })}
+                </ul>
+              </ScrollContainer>
+            ) : (
+              <ul className="flex flex-col text-white" role="tablist">
+                {companiesWorked.map((company, id) => {
+                  return (
+                    <div key={id}>
+                      <CompaniesList
+                        name={company.name}
+                        id={company.id}
+                        openTab={openTab}
+                        setOpenTab={setOpenTab}
+                      />
+                    </div>
+                  );
+                })}
+              </ul>
+            )}
           </div>
           {companiesWorked.map((company, index) => {
             return (
@@ -127,7 +149,7 @@ function CompanyExperience({
           <p className="font-extralight text-slate-400">
             {startDate} - {endDate}
           </p>
-          <ul className="mt-2 ml-8 list-disc text-slate-400 w-[500px] list-disc-blue marker:text-leaf">
+          <ul className="mt-2 ml-8 list-disc text-slate-400 desktop:w-[500px] list-disc-blue marker:text-leaf">
             {thingsWorkedOn.map((task: string, index: number) => {
               return (
                 <li className="my-2" key={index}>

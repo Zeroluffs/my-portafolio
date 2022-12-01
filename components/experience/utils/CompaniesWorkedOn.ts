@@ -47,4 +47,16 @@ export const companiesWorked = [
       "Managed endpoints in the back-end using Django to retrieve data for the front-end",
     ],
   },
+  {
+    id: 5,
+    name: "Proteccion",
+    startDate: "February",
+    endDate: "August 2021",
+    link: "https://www.proteccion.com/contenidos/",
+    role: "Junior Software Developer",
+    thingsWorkedOn: [
+      "Launched several responsive features using React, React-Dashboard and Redux",
+      "Managed endpoints in the back-end using Django to retrieve data for the front-end",
+    ],
+  },
 ];

@@ -16,9 +16,9 @@ interface SkillListType {
 }
 export function Skills() {
   return (
-    <div className="mt-8 ml-8">
+    <div className="mt-8 desktop:ml-8">
       <p className="font-sans text-2xl text-lightState ">My skills</p>
-      <div className="flex flex-row justify-center gap-6  w-[450px] flex-wrap mt-4">
+      <div className="flex flex-row justify-center gap-6  desktop:w-[450px] flex-wrap mt-4">
         {mySkills.map((skill, index) => {
           return (
             <div key={index}>

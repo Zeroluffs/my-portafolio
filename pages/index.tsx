@@ -18,14 +18,15 @@ const Home: NextPage = () => {
   return (
     <div className="relative min-h-screen bg-midnight ">
       <NavigationBar />
-      <SocialBar />
+      {/* <SocialBar /> */}
       {/* {showComponent && <HomePage />} */}
       <HomePage />
       <About />
       <Experience />
-      <Projects />
-      <ContactForm/>
-      <Footer/>
+      {/* <Experience />
+      <Projects /> */}
+      {/* <ContactForm/> */}
+      {/* <Footer/> */}
     </div>
   );
 };
