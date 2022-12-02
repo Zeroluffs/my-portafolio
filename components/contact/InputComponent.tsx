@@ -23,7 +23,7 @@ export function InputComponent({
       <input
         ref={inputRef}
         required
-        className="block h-12 p-4 my-4 rounded-md w-[500px] bg-midnight text-lightState"
+        className="block h-12 p-4 my-4 rounded-md w-[324px] desktop:w-[500px] bg-midnight text-lightState"
         id={id}
         type={type}
         name={id}

@@ -4,6 +4,7 @@ const mySkills = [
   "JavaScript",
   "React",
   "NextJS",
+  "Cypress",
   "Git",
   "NodeJS",
   "Express",
