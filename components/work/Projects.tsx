@@ -17,14 +17,14 @@ export function Projects() {
   };
   return (
     <section id="Work" className="desktop:h-[60vh]">
-      <div className="relative flex px-[24px]  mt-[100px] desktop:flex justify-center items-center">
+      <div className="relative flex px-[24px]  mt-[100px] laptop:flex laptop:justify-center laptop:items-center">
         <p className="font-sans text-2xl font-bold text-lightState ">
           <span className="mr-2 text-xl slashed-zero text-leaf">0.4</span>{" "}
           Things I&apos;ve built
         </p>
         {/* <div className="absolute align-middle border-b-[1px] border-gray-700 w-[392px] right-14 "></div> */}
       </div>
-      <div className="desktop:grid desktop:grid-cols-3 justify-center items-center flex flex-col gap-y-6 desktop:w-[978px] m-auto pt-[100px]">
+      <div className="laptop:grid laptop:grid-cols-3 justify-center items-center flex flex-col  gap-y-6 laptop:w-[978px] m-auto pt-[100px]">
         {projectsWorked.map((project, index) => {
           return (
             <div key={project.id}>

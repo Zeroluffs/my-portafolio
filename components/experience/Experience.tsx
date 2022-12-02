@@ -19,7 +19,7 @@ export function Experience() {
   return (
     <section id="Experience" className="desktop:h-[60vh]">
       <div className="flex flex-col  pt-[16px] mt-[100px]  px-[24px]">
-        <h3 className="items-center justify-center text-2xl font-bold desktop:flex text-lightState bg">
+        <h3 className="items-center justify-center text-2xl font-bold laptop:flex text-lightState bg">
           <span className="text-xl text-leaf pr-[12px]"> 0.3</span> Where
           I&lsquo;ve worked
         </h3>
@@ -27,7 +27,7 @@ export function Experience() {
           {/* <div className="absolute align-middle border-b-[1px] border-gray-700 w-44 right-14 top-4 "></div> */}
         </div>
 
-        <div className="flex flex-col desktop:flex-row justify-center items-center  pt-[16px] desktop:pt-[100px]">
+        <div className="flex flex-col laptop:flex-row justify-center items-center  pt-[16px] desktop:pt-[100px]">
           <div className="pb-4 desktop:ml-32 desktop:border-l border-heig border-gray-700 desktop:h-[225px] ">
             {isBreakPoint ? (
               <ScrollContainer>

@@ -20,7 +20,7 @@ module.exports = {
 
       // 'lg': {'min': '1024px', 'max': '1279px'},
 
-      laptop: { min: "1025px", max: "1366px" },
+      laptop: { min: "1025px" },
 
       desktop: { min: "1367px" },
     },

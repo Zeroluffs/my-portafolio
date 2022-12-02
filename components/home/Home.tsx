@@ -45,7 +45,7 @@ export function HomePage() {
         >
           I build things for the web.
         </p>
-        <p className="font-sans text-lg text-slate-400 desktop:w-[500px]" ref={info}>
+        <p className="font-sans text-lg desktop:text-xl text-slate-400 desktop:w-[524px]" ref={info}>
           I&apos;m a software engineer specializing in building exceptional
           digital experiences. Currently I&apos;m focused in building the
           Frontend of Websites and Web Applications that leads to the success of
