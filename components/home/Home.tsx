@@ -26,7 +26,7 @@ export function HomePage() {
   return (
     <section id="Home" className="h-[80vh] ">
       <div
-        className="flex flex-col desktop:w-[800px] mx-auto mt-48 invisible px-[24px]"
+        className="flex flex-col  tablet:w-[800px] mx-auto mt-48 invisible px-[24px]"
         ref={page}
       >
         <p
@@ -35,17 +35,17 @@ export function HomePage() {
         >
           Hi, my name is
         </p>
-        <p className="mb-8 font-sans text-4xl desktop:text-6xl text-lightState" ref={name}>
+        <p className="mb-8 font-sans text-4xl laptop:text-6xl text-lightState" ref={name}>
           {" "}
           Jhoner Pineda.
         </p>
         <p
-          className="mb-8 font-sans text-4xl tracking-wide desktop:text-6xl text-slate-400"
+          className="mb-8 font-sans text-4xl tracking-wide laptop:text-6xl text-slate-400"
           ref={title}
         >
           I build things for the web.
         </p>
-        <p className="font-sans text-lg desktop:text-xl text-slate-400 desktop:w-[524px]" ref={info}>
+        <p className="font-sans text-lg laptop:text-xl text-slate-400 laptop:w-[524px]" ref={info}>
           I&apos;m a software engineer specializing in building exceptional
           digital experiences. Currently I&apos;m focused in building the
           Frontend of Websites and Web Applications that leads to the success of
