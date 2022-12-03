@@ -62,7 +62,7 @@ export function NavigationBar() {
         <div className="text-4xl text-lightState" id="Logo" ref={logoRef}>
           JP
         </div>
-        <ul className="flex-row justify-center hidden gap-4 laptop```````:flex ">
+        <ul className="flex-row justify-center hidden gap-4 tablet:flex ">
           {navigationRoutes.map((singleRoute) => {
             return (
               <NavigationLinks
@@ -83,7 +83,7 @@ export function NavigationBar() {
             Resume
           </a>
         </ul>
-        <button className="laptop:hidden" onClick={() => setIsOpen(!isOpen)}>
+        <button className="tablet:hidden" onClick={() => setIsOpen(!isOpen)}>
           <FontAwesomeIcon
             onClick={() => setIsOpen(!isOpen)}
             className="text-4xl text-leaf"
