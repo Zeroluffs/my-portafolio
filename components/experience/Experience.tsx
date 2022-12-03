@@ -50,7 +50,7 @@ export function Experience() {
                 </ul>
               </ScrollContainer>
             ) : (
-              <ul className="flex flex-col text-white" role="tablist">
+              <ul className="flex text-white laptop:flex-col " role="tablist">
                 {companiesWorked.map((company, id) => {
                   return (
                     <div key={id}>

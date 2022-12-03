@@ -7,7 +7,7 @@ export function ContactForm() {
 
   return (
     <section id="Contact">
-      <div className="flex flex-col desktop:items-center desktop:justify-center mt-[100px] mx-[24px]">
+      <div className="flex flex-col tablet:items-center tablet:justify-center mt-[100px] mx-[24px]">
         <p className="mb-4 text-lg font-normal text-leaf"> What is next?</p>
         <p className="mb-4 font-sans text-4xl text-lightState">Get In Touch</p>
         <p className="text-lg text-slate-400 desktop:w-[368px]">
@@ -15,7 +15,7 @@ export function ContactForm() {
           to hear from you!
         </p>
       </div>
-      <div className="flex flex-col items-center justify-center mt-20 desktop:mt-20  bg-lightNavy w-[348px]  desktop:w-[800px] h-[648px] desktop:m-auto m-[24px]  rounded-lg">
+      <div className="flex flex-col items-center justify-center mt-20 tablet:mt-20  bg-lightNavy w-[348px]  desktop:w-[800px] h-[648px] tablet:w-[500px] tablet:m-auto m-auto  rounded-lg">
         <form className="flex flex-col" onSubmit={onSubmit} ref={form}>
           <InputComponent
             name="Name *"

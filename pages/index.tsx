@@ -10,7 +10,7 @@ import { Projects } from "../components/work/Projects";
 
 const Home: NextPage = () => {
   const [showComponent, setShowComponent] = useState(false);
-  const isBreakPoint = useMediaQuery(768);
+  const isBreakPoint = useMediaQuery(1132);
 
   useEffect(() => {
     setInterval(() => {

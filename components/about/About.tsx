@@ -3,8 +3,8 @@ import { Skills } from "./Skills";
 export function About() {
   return (
     <section id="About" className="desktop:h-[60vh]">
-      <div className="flex desktop:flex-row flex-col justify-center px-[24px] pt-[100px] ">
-        <div className="flex flex-col desktop:w-[500px]   ">
+      <div className="flex laptop:flex-row flex-col justify-center px-[24px] pt-[100px] ">
+        <div className="flex flex-col laptop:w-[500px]   ">
           <div className="relative flex">
           <p className="font-sans text-2xl font-bold text-lightState ">
             <span className="mr-2 text-xl slashed-zero text-leaf">0.1</span>{" "}
