@@ -62,7 +62,7 @@ export function NavigationBar() {
         <div className="text-4xl text-lightState" id="Logo" ref={logoRef}>
           JP
         </div>
-        <ul className="flex-row justify-center hidden gap-4 laptop:flex ">
+        <ul className="flex-row justify-center hidden gap-4 laptop```````:flex ">
           {navigationRoutes.map((singleRoute) => {
             return (
               <NavigationLinks
