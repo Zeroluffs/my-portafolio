@@ -1,7 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
+import { classNames } from "../utils/JoinClassName";
 import { faBars } from "./icons/Icons";
+import { useScrollPosition } from "./navbar/hooks/useScrollPosition";
 import { NavBarDrawer } from "./navbar/mobile/NavBarDrawer";
 import { NavAnimation } from "./useNavAnimations";
 
@@ -40,6 +42,7 @@ const navigationRoutes = [
 ];
 
 export function NavigationBar() {
+  const scrollPosition = useScrollPosition();
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const logoRef = useRef<HTMLDivElement | null>(null);
   const itemsRef = useRef<HTMLDivElement[]>([]);
@@ -57,7 +60,10 @@ export function NavigationBar() {
     }
   };
   return (
-    <nav>
+    <nav className={classNames(
+      scrollPosition > 0 ? " shadow-2xl" : "shadow-none",
+      "sticky top-0 z-50 bg-midnight  h-24"
+    )}>
       <div className="flex flex-row justify-between pt-8 mx-4 lg:flex-row lg:pt-14">
         <div className="text-4xl text-lightState" id="Logo" ref={logoRef}>
           JP
