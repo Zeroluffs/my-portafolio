@@ -24,21 +24,23 @@ export function Projects() {
         </p>
         {/* <div className="absolute align-middle border-b-[1px] border-gray-700 w-[392px] right-14 "></div> */}
       </div>
-      <div className="laptop:grid laptop:grid-cols-3 justify-center items-center flex flex-col  gap-y-6 laptop:w-[978px] m-auto pt-[100px]">
-        {projectsWorked.map((project, index) => {
-          return (
-            <div key={project.id}>
-              <ProjectCard
-                name={project.name}
-                description={project.description}
-                techUsed={project.techUsed}
-                gitHub={project.gitHub}
-                link={project.link}
-                addToRefs={addToRefs}
-              />
-            </div>
-          );
-        })}
+      <div className="tablet:flex tablet:justify-center tablet:item-center">
+           <div className="tablet:grid tablet:grid-cols-2 flex flex-col items-center justify-center gap-y-6 laptop:grid-cols-3 gap-x-6 pt-[100px]">
+          {projectsWorked.map((project, index) => {
+            return (
+              <div key={project.id}>
+                <ProjectCard
+                  name={project.name}
+                  description={project.description}
+                  techUsed={project.techUsed}
+                  gitHub={project.gitHub}
+                  link={project.link}
+                  addToRefs={addToRefs}
+                />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );

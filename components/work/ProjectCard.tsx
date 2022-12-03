@@ -24,7 +24,7 @@ export function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div
-      className="h-[324px] w-[304px] bg-lightNavy hover:-mt-2 transition duration-500 group  "
+      className="h-[324px] w-[304px] bg-lightNavy hover:-mt-2 transition duration-500 group"
       ref={addToRefs}
     >
       <div className="p-4">
