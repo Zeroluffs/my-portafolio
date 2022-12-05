@@ -12,7 +12,7 @@ export const HomeAnimation = (
 
   time.fromTo(
     page.current,
-    { x: -100 },
+    { x: -100},
     {
       x: 0,
       visibility: "visible",

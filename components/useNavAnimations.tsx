@@ -4,9 +4,18 @@ import { gsap } from "gsap";
 export function NavAnimation(
   logoRef: RefObject<HTMLDivElement>,
   resumeButton: RefObject<HTMLAnchorElement>,
-  itemsRef?: RefObject<HTMLDivElement[]>,
+  page: RefObject<HTMLDivElement>,
+  itemsRef?: RefObject<HTMLDivElement[]>
 ) {
   const time = gsap.timeline();
+  time.fromTo(
+    page.current,
+    { x: -100 },
+    {
+      x: 0,
+      visibility: "visible",
+    }
+  );
   time.fromTo(
     logoRef.current,
     {
