@@ -10,23 +10,25 @@ export function HomePage() {
   const [isShown, setIsShown] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsShown(true);
-      HomeAnimation(page, nameIntro, name, title, info);
-    }, 500);
+    HomeAnimation(page, nameIntro, name, title, info);
 
-    return () => clearTimeout(timer);
+    // const timer = setTimeout(() => {
+    //   setIsShown(true);
+    //   HomeAnimation(page, nameIntro, name, title, info);
+    // }, 500);
+
+    // return () => clearTimeout(timer);
   }, []);
-  if (typeof window !== "undefined") {
-    window.addEventListener("load", function (event) {
-      HomeAnimation(page, nameIntro, name, title, info);
-    });
-  }
+  // if (typeof window !== "undefined") {
+  //   window.addEventListener("load", function (event) {
+  //     HomeAnimation(page, nameIntro, name, title, info);
+  //   });
+  // }
 
   return (
     <section id="Home" className="h-[80vh] ">
       <div
-        className="flex flex-col  tablet:w-[800px] mx-auto mt-48 invisible px-[24px]"
+        className="flex flex-col  tablet:w-[800px] mx-auto mt-48 invisible  px-[24px]"
         ref={page}
       >
         <p

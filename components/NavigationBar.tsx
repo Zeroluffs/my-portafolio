@@ -46,10 +46,11 @@ export function NavigationBar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const logoRef = useRef<HTMLDivElement | null>(null);
   const itemsRef = useRef<HTMLDivElement[]>([]);
+  const page = useRef<HTMLDivElement | null>(null);
   const resumeButton = useRef<HTMLAnchorElement | null>(null);
   itemsRef.current = [];
   useEffect(() => {
-    NavAnimation(logoRef, resumeButton, itemsRef);
+    NavAnimation(logoRef, resumeButton,page, itemsRef);
   }, []);
   useEffect(() => {
     console.log("work", isOpen);
@@ -60,11 +61,16 @@ export function NavigationBar() {
     }
   };
   return (
-    <nav className={classNames(
-      scrollPosition > 0 ? " shadow-2xl" : "shadow-none",
-      "sticky top-0 z-50 bg-midnight  h-24"
-    )}>
-      <div className="flex flex-row justify-between pt-8 mx-4 lg:flex-row lg:pt-14">
+    <nav
+      className={classNames(
+        scrollPosition > 0 ? " shadow-2xl" : "shadow-none",
+        "sticky top-0 z-50 bg-midnight  h-24"
+      )}
+    >
+      <div
+        className="flex flex-row justify-between invisible pt-8 mx-4 lg:flex-row lg:pt-14"
+        ref={page}
+      >
         <div className="text-4xl text-lightState" id="Logo" ref={logoRef}>
           JP
         </div>
