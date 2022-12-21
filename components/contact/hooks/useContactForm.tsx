@@ -9,11 +9,6 @@ export function useContactForm() {
 
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log(name.current!.value);
-    console.log(email.current!.value);
-    console.log(textArea.current!.value);
-    console.log(form.current!.name!.valueOf());
-
     const emailToSend = {
       from_name: name.current!.value,
       from_email: email.current!.value,

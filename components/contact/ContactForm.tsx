@@ -6,8 +6,8 @@ export function ContactForm() {
   const { email, name, textArea, onSubmit, form } = useContactForm();
 
   return (
-    <section id="Contact">
-      <div className="flex flex-col tablet:items-center tablet:justify-center mt-[100px] mx-[24px]">
+    <section id="Contact" className="">
+      <div className="flex flex-col tablet:items-center tablet:justify-center mt-[200px] pt-[112px] mx-[24px]">
         <p className="mb-4 text-lg font-normal text-leaf"> What is next?</p>
         <p className="mb-4 font-sans text-4xl text-lightState">Get In Touch</p>
         <p className="text-lg text-slate-400 desktop:w-[368px]">
