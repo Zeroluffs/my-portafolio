@@ -26,7 +26,7 @@ export function About() {
     >
       <motion.div variants={cardVariants}>
         <section id="About" className="desktop:h-[60vh]">
-          <div className="flex laptop:flex-row flex-col justify-center px-[24px] pt-[100px] ">
+          <div className="flex laptop:flex-row flex-col justify-center px-[24px] pt-[112px] ">
             <div className="flex flex-col laptop:w-[500px]   ">
               <div className="relative flex">
                 <p className="font-sans text-2xl font-bold text-lightState ">

@@ -18,7 +18,7 @@ export function Experience() {
 
   return (
     <section id="Experience" className="desktop:h-[60vh]">
-      <div className="flex flex-col  pt-[16px] mt-[100px]  px-[24px]">
+      <div className="flex flex-col  pt-[112px] mt-[100px]  px-[24px]">
         <h3 className="items-center justify-center text-2xl font-bold laptop:flex text-lightState bg">
           <span className="text-xl text-leaf pr-[12px]"> 0.3</span> Where
           I&lsquo;ve worked
