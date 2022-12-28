@@ -5,7 +5,14 @@ export const companiesWorked = [
     startDate: "October",
     endDate: "Current",
     role: "Front End Developer",
-    thingsWorkedOn: ["WIP"],
+    thingsWorkedOn: [
+      "Redesigned the company corporate website",
+      "Implemented E2E testing using Cypress",
+      "Mentored new front end junior devs",
+      "Served as primary technical lead on multiple major projects, collaborating across teams and levels when making code architecture decisions",
+      "Communicated with stakeholders about roadmap progress and championed solutions that met requirements with quick turnaround",
+      "Served as the primary connection between design and development",
+    ],
   },
   {
     id: 2,
