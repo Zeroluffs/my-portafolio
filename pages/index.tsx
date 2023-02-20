@@ -11,8 +11,6 @@ import { Projects } from "../components/work/Projects";
 const Home: NextPage = () => {
   return (
     <div className="relative min-h-screen bg-midnight ">
-      {/* <SocialBar /> */}
-      {/* {showComponent && <HomePage />} */}
       <HomePage />
       <About />
       <Experience />
