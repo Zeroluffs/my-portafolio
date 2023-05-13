@@ -1,3 +1,4 @@
+//work experience
 export const companiesWorked = [
   {
     id: 1,
