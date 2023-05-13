@@ -4,7 +4,7 @@ export const companiesWorked = [
     id: 1,
     name: 'WebRun Labs',
     startDate: 'February 2023',
-    endDate: 'June',
+    endDate: 'June 2023',
     role: 'Front End Developer',
     thingsWorkedOn: [
       'Developed, using React, a diverse range of landing pages catering to different industries, showcasing adaptability and veratility in design and implementation',
@@ -17,7 +17,7 @@ export const companiesWorked = [
     id: 2,
     name: 'Peacedev',
     startDate: 'October 2022',
-    endDate: 'February',
+    endDate: 'February 2023',
     role: 'Front End Developer',
     thingsWorkedOn: [
       'Redesigned the company corporate website',
