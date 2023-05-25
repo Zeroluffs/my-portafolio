@@ -23,4 +23,12 @@ export const projectsWorked = [
     gitHub: 'https://github.com/Zeroluffs/url-shortener',
     link: 'https://sparkly-pastelito-0c324c.netlify.app/',
   },
+  {
+    id: 3,
+    name: 'Image Visualizer',
+    description: 'App to Visualize Images from Unsplashed given a certain topic',
+    techUsed: ['Next.js', 'Tailwind', 'RSC', 'Next Intl'],
+    gitHub: 'https://github.com/Zeroluffs/image-visualizer',
+    link: 'https://image-visualizer.vercel.app/',
+  },
 ]
