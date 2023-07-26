@@ -1,18 +1,18 @@
 //work experience
 export const companiesWorked = [
-  {
-    id: 1,
-    name: 'WebRun Labs',
-    startDate: 'February 2023',
-    endDate: 'June 2023',
-    role: 'Front End Developer',
-    thingsWorkedOn: [
-      'Developed, using React, a diverse range of landing pages catering to different industries, showcasing adaptability and veratility in design and implementation',
-      'Took a leadership role in mentoring and guiding a junior developer, helping them in their professional development',
-      'Collaborated closely with the design team to ensure pixel-perfect execution of web applications',
-      'Utilized Airtable to efficienly manage client data and streamline processes, resulting in the successful implementation of marketing and email campaigns to drive client engagement and increase conversion rates rates',
-    ],
-  },
+  // {
+  //   id: 1,
+  //   name: 'WebRun Labs',
+  //   startDate: 'February 2023',
+  //   endDate: 'June 2023',
+  //   role: 'Front End Developer',
+  //   thingsWorkedOn: [
+  //     'Developed, using React, a diverse range of landing pages catering to different industries, showcasing adaptability and veratility in design and implementation',
+  //     'Took a leadership role in mentoring and guiding a junior developer, helping them in their professional development',
+  //     'Collaborated closely with the design team to ensure pixel-perfect execution of web applications',
+  //     'Utilized Airtable to efficienly manage client data and streamline processes, resulting in the successful implementation of marketing and email campaigns to drive client engagement and increase conversion rates rates',
+  //   ],
+  // },
   {
     id: 2,
     name: 'Peacedev',
@@ -22,10 +22,12 @@ export const companiesWorked = [
     thingsWorkedOn: [
       'Redesigned the company corporate website',
       'Implemented E2E testing using Cypress',
-      'Mentored new front end junior devs',
+      'Developed, using React, a diverse range of landing pages catering to different industries, showcasing adaptability and veratility in design and implementation',
+      'Took a leadership role in mentoring and guiding a small team of three junior developers, fostering their skills professional growth',
       'Served as primary technical lead on multiple major projects, collaborating across teams and levels when making code architecture decisions',
       'Communicated with stakeholders about roadmap progress and championed solutions that met requirements with quick turnaround',
       'Served as the primary connection between design and development',
+      'Utilized Airtable to efficienly manage client data and streamline processes, resulting in the successful implementation of marketing and email campaigns to drive client engagement and increase conversion rates rates',
     ],
   },
   {

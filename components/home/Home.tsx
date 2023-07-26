@@ -46,7 +46,7 @@ export function HomePage() {
           I&apos;m a software engineer specializing in building exceptional digital experiences.
           Currently I&apos;m focused in building the Frontend of Websites and Web Applications that
           leads to the success of the overall product at{' '}
-          <span className="ml-2 text-leaf">WebRun</span>
+          <span className="ml-2 text-leaf">Peacedev</span>
         </p>
       </div>
     </section>

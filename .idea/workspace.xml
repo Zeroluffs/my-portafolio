@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bb8eb7a-d7c3-4058-b2c8-0897761ad700" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/components/home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/Home.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="9bb8eb7a-d7c3-4058-b2c8-0897761ad700" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +30,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.keymap",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "ts.external.directory.path": "/Users/jhonerdlamarck/my-portafolio/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -45,6 +43,7 @@
       <option name="presentableId" value="Default" />
       <updated>1676992815853</updated>
       <workItem from="1676992817536" duration="190000" />
+      <workItem from="1685217004970" duration="23000" />
     </task>
     <servers />
   </component>
