@@ -16,8 +16,8 @@ export const companiesWorked = [
   {
     id: 2,
     name: 'Peacedev',
-    startDate: 'October 2022',
-    endDate: 'February 2023',
+    startDate: 'August 2022',
+    endDate: 'June 2023',
     role: 'Front End Developer',
     thingsWorkedOn: [
       'Redesigned the company corporate website',
